@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewrackley/examples.git"
+  },
+  "author": "Matthew Allen Rackley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewrackley/examples/issues"
+  },
+  "homepage": "https://github.com/matthewrackley/examples#readme",
+  "dependencies": {
+    "@types/express": "^4.17.19",
+    "@types/node": "^20.8.4",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
