@@ -3,6 +3,14 @@ services:
   postgres:
     build:
       context: .
-      dockerfile: Dockerfile-postgres
+      dockerfile: dockerfile-postgres.docker
     ports:
       - "5432:5432"
+  backend:
+    build:
+      context: ./backend  # assuming your backend code is in a folder named "backend"
+      dockerfile: dockerfile-backend.docker
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
