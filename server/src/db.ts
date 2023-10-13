@@ -1,10 +1,10 @@
 import { Pool } from 'pg';
 
 const pool = new Pool({
-  user: 'database_user',
+  user: 'todo_user',
   host: 'postgres',  // Service name in docker-compose.yml
   database: 'todo_db',
-  password: 'password',
+  password: 'todo_password',
   port: 5432,
 });
 
