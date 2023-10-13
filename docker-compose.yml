@@ -3,7 +3,7 @@ services:
   postgres:
     build:
       context: ./database
-      dockerfile: dockerfile-postgres.docker
+      dockerfile: postgres.dockerfile
     ports:
       - "5432:5432"
   volumes:
@@ -20,7 +20,7 @@ services:
   backend:
     build:
       context: ./server
-      dockerfile: dockerfile-backend.docker
+      dockerfile: backend.dockerfile
     ports:
       - "3001:3001"
     depends_on:
